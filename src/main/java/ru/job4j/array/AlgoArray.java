@@ -8,15 +8,11 @@ public class AlgoArray {
         array[0] = array[3];
         array[3] = temp;
 
-        for (int j = 0; j < array.length; j++) {
-            for (int index = 0; index < array.length - j - 1; index++) {
-                if (array[index] > array[index + 1]) {
-                    temp = array[index];
-                    array[index] = array[index + 1];
-                    array[index + 1] = temp;
-                }
-            }
-        }
+        array[3] = array[4];
+        array[4] = temp;
+        temp = array[1];
+        array[1] = array[2];
+        array[2] = temp;
 
         for (int index = 0; index < array.length; index++) {
             System.out.println(array[index]);
